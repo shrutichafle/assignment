@@ -1,12 +1,12 @@
-year=int(input("enter your experience in year:"))
-if year>=5:
-    bonus=10000
-    print("your bonus is",bonus)
-elif year>=3:
-    bonus=5000
-    print("your bonus is",bonus)
-elif year>=1:
-    bonus=2000
-    print("your bonus is",bonus)
+comsume=int(input("enter the unit consumed in kw:"))
+if comsume<=50:
+    print("cost of the electricity is:",cost)
+elif comsume<=150:
+    cost=50+(comsume-50)*2.50
+    print("cost of the electricity is:",cost)
+elif comsume<=250:
+    cost=50+100+(comsume-150)*4
+    print("cost of the electricity is:",cost)
 else:
-    print("you have no bonus")
+    cost=50+100+400+(comsume-250)*6
+    print("cost of the electricity is:",cost)
