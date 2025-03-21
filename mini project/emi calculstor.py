@@ -1,0 +1,10 @@
+p=int(input("Enter the principal amount: "))
+rate=int(input("Enter the rate of interest: "))
+y=int(input("Enter the number of years: "))
+r=rate/(12*100)
+n=y*12
+emi=p*r*(1+r)**n/((1+r)**n-1)
+print("the loan emi per month is: ",emi)
+print("the total amount to be paid is: ",emi*n)
+print("the total interest to be paid is: ",emi*n-p)
+print("the tenure in month is: ",n)
